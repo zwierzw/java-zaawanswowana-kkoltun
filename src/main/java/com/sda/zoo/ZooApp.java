@@ -11,5 +11,12 @@ public class ZooApp {
         Air air = new Air();
         air.flyInAir(eagle);
         air.flyInAir(duck);
+
+
+        Animal anotherDuck = new Duck();
+        anotherDuck.eat("vegetables");
+
+        Animal anotherEagle = new Eagle();
+        anotherEagle.eat("mouse");
     }
 }
