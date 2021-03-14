@@ -15,13 +15,19 @@ public class ExceptionApp {
         System.out.println("Zamykam program.");
     }
 
-    static void greet(String name) {
-        if (name == null || name.isEmpty()) {
-            throw new IllegalArgumentException("Imię jest puste");
+    // teraz jest to Checked Exception
+    static void greet(String name){
+        try {
+            if (name == null || name.isEmpty()) {
+                throw new Exception("Imię jest puste");
+            }
+            if (name.length() == 1) {
+                throw new Exception("Imię jest zbyt krótkie");
+            }
+            System.out.println("Hello " + name);
         }
-        if (name.length() == 1) {
-            throw new IllegalArgumentException("Imię jest zbyt krótkie");
+        catch (Exception exception){
+            System.out.println("Wyjątek");
         }
-        System.out.println("Hello " + name);
     }
 }
