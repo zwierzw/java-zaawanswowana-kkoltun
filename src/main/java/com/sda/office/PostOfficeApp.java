@@ -1,6 +1,6 @@
 package com.sda.office;
 
-public class Office {
+public class PostOfficeApp {
     public static void main(String[] args) {
         PackageStatus sent = PackageStatus.SENT;
         System.out.println(sent);
