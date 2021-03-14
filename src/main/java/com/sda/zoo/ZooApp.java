@@ -18,5 +18,20 @@ public class ZooApp {
 
         Animal anotherEagle = new Eagle();
         anotherEagle.eat("mouse");
+
+        FlyBehavior plain = new FlyBehavior() {
+            @Override
+            public void fly (double height){
+                if (height>=3000){
+                    System.out.println("Latam na wysokości "+ height);
+                } else {
+                    System.out.println("Latam na wysokości 3000");
+                }
+            }
+        };
+
+        plain.fly(500);
+        plain.fly(3500);
+
     }
 }
