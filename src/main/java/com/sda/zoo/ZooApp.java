@@ -50,5 +50,13 @@ public class ZooApp {
         ground.runOnGround(duck2,200);
         ground.runOnGround(duck3,300);
 
+
+        Dog dog1 = new Dog();
+        dog1.eat("bone");
+        dog1.run(23);
+
+        Robot robot1 = new Robot();
+        robot1.run(233);
+
     }
 }
