@@ -30,10 +30,33 @@ public class VehicleApp {
         runThisVehicle(vehicle);
         runThisVehicle(car);
         runThisVehicle(motorcycle);
+
+
+        ConvertibleCar convertibleCar = new ConvertibleCar();
+        convertibleCar.openRoof(true);
+        convertibleCar.openRoof(false);
+        convertibleCar.closeRoof(false);
+        convertibleCar.closeRoof(true);
+
+
+        System.out.println(car.toString());
+        car.addPassenger();
+        System.out.println(car.toString());
+        car.addPassenger();
+        car.addPassenger();
+        car.removePassengers();
+        car.removePassengers();
+        car.removePassengers();
+        car.removePassengers();
+        car.removePassengers();
+
     }
 
 
     private static void runThisVehicle(Vehicle vehicle) {
         vehicle.run(100);
     }
+
+
+
 }
