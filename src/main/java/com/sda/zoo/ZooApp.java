@@ -33,5 +33,22 @@ public class ZooApp {
         plain.fly(500);
         plain.fly(3500);
 
+        Eagle eagle2 = new Eagle();
+        eagle2.run(23);
+
+        Duck duck2 = new Duck();
+        duck2.run(23);
+
+        RunBehaviour eagle3 = new Eagle();
+        eagle3.run(34);
+
+        RunBehaviour duck3 = new Duck();
+        duck3.run(34);
+
+        Ground ground = new Ground();
+        ground.runOnGround(eagle2,34);
+        ground.runOnGround(duck2,200);
+        ground.runOnGround(duck3,300);
+
     }
 }
