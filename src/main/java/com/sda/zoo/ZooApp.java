@@ -58,5 +58,26 @@ public class ZooApp {
         Robot robot1 = new Robot();
         robot1.run(233);
 
+
+        RunBehaviour gepard = new RunBehaviour() {
+            @Override
+            public String run(double speed) {
+                double exitSpeed = speed;
+                if (speed<300){
+                     exitSpeed =300;
+                }
+                System.out.println("Gepard biegnie z prędkością " + exitSpeed);
+                return null;
+            }
+
+            @Override
+            public String toString() {
+                return "gepard{}";
+            }
+        };
+
+        gepard.run(350);
+        ground.runOnGround(gepard,200);
+
     }
 }
