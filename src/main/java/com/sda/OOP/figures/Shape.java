@@ -1,40 +1,43 @@
-//package com.sda.OOP.figures;
-//
-//public class Shape {
-//    private String color;
-//    private boolean isFigureColoured;
-//
-//    public Shape() {
-//        this.color = "unknown";
-//        this.isFigureColoured = false;
-//    }
-//
-//    public Shape(String color, boolean isFigureColoured){
-//        this.color = color;
-//        this.isFigureColoured = isFigureColoured;
-//    }
-//
-//    public String getColor() {
-//        return color;
-//    }
-//
-//    public void setColor(String color) {
-//        this.color = color;
-//    }
-//
-//    public boolean isFigureColoured() {
-//        return isFigureColoured;
-//    }
-//
-//    public void setFigureColoured(boolean figureColoured) {
-//        isFigureColoured = figureColoured;
-//    }
-//
-//    @Override
-//    public String toString() {
-//        boolean
-//        if
-//        return String.format("Shape with color of %s and " +
-//                );
-//    }
-//}
+package com.sda.OOP.figures;
+
+public class Shape {
+    private String color;
+    private boolean isFilled;
+
+    public Shape() {
+        this.color = "unknown";
+        this.isFilled = false;
+    }
+
+    public Shape(String color, boolean isFilled){
+        this.color = color;
+        this.isFilled = isFilled;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public boolean isFilled() {
+        return isFilled;
+    }
+
+    public void setIsFilled(boolean isFilled) {
+        this.isFilled = isFilled;
+    }
+
+    @Override
+    public String toString() {
+        String result;
+        if (isFilled()) {
+            result = "filled";
+        } else{
+            result = "NotFilled";
+        }
+        return String.format("Shape with color of %s and %s", getColor(), result);
+    }
+}
