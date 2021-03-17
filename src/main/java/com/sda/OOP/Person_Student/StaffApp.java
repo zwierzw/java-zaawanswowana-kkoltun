@@ -6,7 +6,5 @@ public class StaffApp {
         Person lecturer = new Lecturer("Tomek", "Kraków", "chemia", 456.23f);
         System.out.println(student);
         System.out.println(lecturer);
-        // Czemu ten String nie działa?????????
-
     }
 }

@@ -31,7 +31,9 @@ public class Lecturer extends Person{
     @Override
     public String toString() {
         return "Lecturer{" +
-                "specialisation='" + specialisation + '\'' +
+                "name="+ getName() + '\'' +
+                ", address=" + getAddress() +'\'' +
+                ", specialisation='" + specialisation + '\'' +
                 ", salary=" + salary +
                 '}';
     }

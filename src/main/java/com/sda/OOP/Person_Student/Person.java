@@ -4,8 +4,8 @@ public abstract class Person {
     private String name, address;
 
     public Person() {
-        this.name = null;
-        this.address = null;
+        this.name = "";
+        this.address = "";
     }
 
     public Person(String name, String address) {

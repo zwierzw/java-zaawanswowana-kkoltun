@@ -1,8 +1,6 @@
 package com.sda.OOP.Person_Student;
 
 
-
-
 public class Student extends Person{
     private String typeOfStudies;
     private int yearOfStudies;
@@ -42,7 +40,9 @@ public class Student extends Person{
     @Override
     public String toString() {
         return "Student{" +
-                "typeOfStudies='" + typeOfStudies + '\'' +
+                "name="+ getName() + '\'' +
+                ", address=" + getAddress() +'\'' +
+                ", typeOfStudies='" + typeOfStudies + '\'' +
                 ", yearOfStudies=" + yearOfStudies +
                 ", costOfStudies=" + costOfStudies +
                 '}';
