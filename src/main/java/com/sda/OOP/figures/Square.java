@@ -12,21 +12,21 @@ public class Square extends Rectangle {
     @Override
     public void setWidth(double width) {
         super.setWidth(width);
-        setLength(width);
+        super.setLength(width);
     }
 
     @Override
-    public void setLength(double length){
+    public void setLength(double length) {
         super.setLength(length);
-        setWidth(length);
+        super.setWidth(length);
     }
 
 
     @Override
     public String toString() {
-        return String.format("Square with length=%f is a subclass off %s", getLength(), super.toString());
+        return String.format("Square with width=%f and length=%f which is subclass off %s",
+                getWidth(), getLength(), super.toString());
     }
-
     //Czemu to nie działa
 
 }

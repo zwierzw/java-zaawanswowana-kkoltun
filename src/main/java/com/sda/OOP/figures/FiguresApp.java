@@ -11,8 +11,10 @@ public class FiguresApp {
         Rectangle rectangle = new Rectangle(null, false, 10,5);
         System.out.println(rectangle.toString());
 
-//        Square square = new Square("czerwony", true, 23);
-//        System.out.println(square.toString());
+        Square square = new Square("czerwony", true, 23);
+        System.out.println(square.toString());
+
+        //Czemu nie działa square :c
     }
 
 }
