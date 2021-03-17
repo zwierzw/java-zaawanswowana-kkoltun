@@ -9,6 +9,16 @@ public class Circle extends Shape{
         this.radius = 1;
     }
 
+    @Override
+    public double getArea() {
+        return 0;
+    }
+
+    @Override
+    public double getPerimeter() {
+        return 0;
+    }
+
     public Circle(String color, boolean isFilled, double radius) {
         super(color, isFilled);
         this.radius = radius;

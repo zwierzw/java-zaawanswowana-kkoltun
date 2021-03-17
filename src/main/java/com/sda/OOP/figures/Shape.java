@@ -1,8 +1,8 @@
 package com.sda.OOP.figures;
 
-public class Shape {
-    private String color;
-    private boolean isFilled;
+public abstract class Shape {
+    protected String color;
+    protected boolean isFilled;
 
     public Shape() {
         this.color = "unknown";
@@ -29,6 +29,10 @@ public class Shape {
     public void setIsFilled(boolean isFilled) {
         this.isFilled = isFilled;
     }
+
+    public abstract double getArea();
+
+    public abstract double getPerimeter();
 
     @Override
     public String toString() {
