@@ -1,4 +1,4 @@
-package com.sda.OOP.tasks;
+package com.sda.OOP.point2D_3D;
 
 public class Point3D extends Point2D{
     private float z;
