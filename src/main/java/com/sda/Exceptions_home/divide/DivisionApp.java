@@ -3,7 +3,7 @@ package com.sda.Exceptions_home.divide;
 public class DivisionApp {
 
     public static void main(String[] args) {
-        try{
+        try {
             Division division = new Division();
             division.divide();
         } catch (CannotDivideBy0Exception e) {
@@ -13,10 +13,10 @@ public class DivisionApp {
         }
 
 
-        try{
+        try {
             Division division2 = new Division();
             division2.divide();
-        } catch(CannotDivideBy0Exception e) {
+        } catch (CannotDivideBy0Exception e) {
             System.out.println(e.getMessage());
         }
 

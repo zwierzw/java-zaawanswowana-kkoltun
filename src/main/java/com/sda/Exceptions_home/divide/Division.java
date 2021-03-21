@@ -5,11 +5,11 @@ public class Division {
     private double b;
 
 
-    public double divide() throws CannotDivideBy0Exception{
-        if(b ==0) {
+    public double divide() throws CannotDivideBy0Exception {
+        if (b == 0) {
             throw new CannotDivideBy0Exception();
         }
-        return (double) a/b;
+        return (double) a / b;
     }
 
     public double getA() {
