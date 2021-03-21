@@ -1,4 +1,4 @@
-package com.sda.Exceptions_home.divide;
+package com.sda.exceptions_home.divide;
 
 public class CannotDivideBy0Exception extends Exception {
 

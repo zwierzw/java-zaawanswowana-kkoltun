@@ -1,4 +1,4 @@
-package com.sda.Exceptions_home.divide;
+package com.sda.exceptions_home.divide;
 
 public class Division {
     private double a;
