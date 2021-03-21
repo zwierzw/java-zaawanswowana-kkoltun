@@ -1,4 +1,4 @@
-package com.sda.OOP.point2D_3D;
+package com.sda.OOP.point2D_3D_and_line;
 
 public class PointApp {
     public static void main(String[] args) {
@@ -22,9 +22,11 @@ public class PointApp {
         System.out.println(point3D);
 
 
+        Line line1 = new Line();
+        System.out.println(line1);
 
-
-
+        Line line2 = new Line(0,0,1,1);
+        System.out.println(line2);
 
     }
 }

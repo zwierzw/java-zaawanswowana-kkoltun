@@ -1,4 +1,4 @@
-package com.sda.OOP.point2D_3D;
+package com.sda.OOP.point2D_3D_and_line;
 
 public class Point2D {
     private float x;
