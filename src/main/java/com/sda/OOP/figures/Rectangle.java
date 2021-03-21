@@ -11,6 +11,16 @@ public class Rectangle extends Shape{
         this.length = 1;
     }
 
+    @Override
+    public double getArea() {
+        return width*length;
+    }
+
+    @Override
+    public double getPerimeter() {
+        return 2*(width+length);
+    }
+
     public Rectangle(String color, boolean isFilled, double width, double length) {
         super(color, isFilled);
         this.width = width;
@@ -33,13 +43,13 @@ public class Rectangle extends Shape{
         this.length = length;
     }
 
-    public double getArea(double width, double length){
-        return width*length;
-    }
-
-    public double getPerimeter(double width, double length){
-        return 2*(width+length);
-    }
+//    public double getArea(double width, double length){
+//        return width*length;
+//    }
+//
+//    public double getPerimeter(double width, double length){
+//        return 2*(width+length);
+//    }
 
     @Override
     public String toString() {

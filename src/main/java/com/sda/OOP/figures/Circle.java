@@ -11,12 +11,12 @@ public class Circle extends Shape{
 
     @Override
     public double getArea() {
-        return 0;
+        return Math.PI*Math.sqrt(radius);
     }
 
     @Override
     public double getPerimeter() {
-        return 0;
+        return 2*Math.PI*radius;
     }
 
     public Circle(String color, boolean isFilled, double radius) {
@@ -31,14 +31,14 @@ public class Circle extends Shape{
     public void setRadius(double radius) {
         this.radius = radius;
     }
-
-    public double getArea(double radius){
-        return Math.PI*Math.sqrt(radius);
-    }
-
-    public double getPerimeter (double radius){
-        return 2*Math.PI*radius;
-    }
+//
+//    public double getArea(double radius){
+//        return Math.PI*Math.sqrt(radius);
+//    }
+//
+//    public double getPerimeter (double radius){
+//        return 2*Math.PI*radius;
+//    }
 
     @Override
     public String toString() {
