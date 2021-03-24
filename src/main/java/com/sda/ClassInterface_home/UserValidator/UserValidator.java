@@ -11,7 +11,7 @@ public class UserValidator {
             private String email;
 
             public Email(String email) {
-                if (this.email == null || this.email.isEmpty() || !matcherChecker(email)) {
+                if (email == null || email.isEmpty() || !matcherChecker(email)) {
                     this.email = "unknown";
                 } else {
                     this.email = email;
