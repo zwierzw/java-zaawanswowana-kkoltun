@@ -1,4 +1,4 @@
-package com.sda.generic;
+package com.sda.generic.box;
 
 public class BoxApp {
     public static void main(String[] args) {
