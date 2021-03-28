@@ -6,8 +6,10 @@ public class BasketballTeamApp {
     public static void main(String[] args) {
         BasketballTeam basketballTeam = new BasketballTeam();
         Player leBron = new Player("James", "LeBron", 200);
+        Player zenon = new Player("Zenon", "Martyniuk", 175);
         basketballTeam.addPlayer(leBron);
         basketballTeam.addPlayer(leBron);
+        basketballTeam.addPlayer(zenon);
 
 
         System.out.println(basketballTeam.getPayers());
@@ -54,5 +56,11 @@ public class BasketballTeamApp {
 
 
         System.out.println(basketballTeam.getPlayersHigherThan200());
+
+        System.out.println(basketballTeam.getHigherThan180ForLoop());
+
+        System.out.println(basketballTeam.getHigherThan180ForStream());
+        System.out.println(basketballTeam.getHigherThan180ForStreamAbbreviation());
+        System.out.println(basketballTeam.getPlayerNames());
     }
 }
