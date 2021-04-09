@@ -47,7 +47,7 @@ public class BookServiceApp {
         System.out.println(bookService.getSpecificBook(klamcaBook));
         System.out.println(bookService.getSpecificBook(kolorMagiiBook));
 
-        Book mortBook = new Book("Mort", 27.99d, 2002,authorList5, Genre.FANTASY);
+        Book mortBook = new Book("Mort", 27.99d, 2002, authorList5, Genre.FANTASY);
         myBooks.add(kolorMagiiBook);
         myBooks.add(mortBook);
         System.out.println(bookService.getAllBooksOfOneAuthor(pratchett));
