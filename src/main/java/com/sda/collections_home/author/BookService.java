@@ -1,9 +1,6 @@
 package com.sda.collections_home.author;
 
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class BookService {
@@ -76,6 +73,16 @@ public class BookService {
                 .filter(book -> book.getAuthorList().contains(author))
                 .collect(Collectors.toList());
     }
+
+    //dodatkowa metoda z zadania 4
+    public Map<Genre, String> getSpecialMap (){
+        Map<Genre, String> bookMap = new HashMap<>();
+        for (Book book : bookList){
+            bookMap.put(book.getGenre(),book.getTitle());
+        }
+        return bookMap;
+    }
+
 
     @Override
     public String toString() {

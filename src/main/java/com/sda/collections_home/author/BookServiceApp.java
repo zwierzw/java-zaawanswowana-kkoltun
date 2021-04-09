@@ -53,5 +53,8 @@ public class BookServiceApp {
         System.out.println(bookService.getAllBooksOfOneAuthor(pratchett));
 
 
+        //dodatkowa metoda z zadania 4
+        System.out.println(bookService.getSpecialMap()); //metoda dodaje tylko 2 tytuły, bo w mapie 1 klucz ma 1 wartość!!
+
     }
 }
