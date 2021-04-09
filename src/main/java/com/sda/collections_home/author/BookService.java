@@ -75,12 +75,20 @@ public class BookService {
     }
 
     //dodatkowa metoda z zadania 4
-    public Map<Genre, String> getSpecialMap (){
+    public Map<Genre, String> getSpecialMap() {
         Map<Genre, String> bookMap = new HashMap<>();
-        for (Book book : bookList){
-            bookMap.put(book.getGenre(),book.getTitle());
+        for (Book book : bookList) {
+            bookMap.put(book.getGenre(), book.getTitle());
         }
         return bookMap;
+    }
+
+    // dodatkowa metoda z zadania 5
+    public Set<Book> getSortedBooksSet() {
+        return bookList.stream()
+                .sorted(Comparator.reverseOrder())
+                .collect(Collectors.toCollection(LinkedHashSet::new));
+
     }
 
 

@@ -56,5 +56,8 @@ public class BookServiceApp {
         //dodatkowa metoda z zadania 4
         System.out.println(bookService.getSpecialMap()); //metoda dodaje tylko 2 tytuły, bo w mapie 1 klucz ma 1 wartość!!
 
+
+        //dodatkowa metoda z zadania 5
+        System.out.println(bookService.getSortedBooksSet());
     }
 }
