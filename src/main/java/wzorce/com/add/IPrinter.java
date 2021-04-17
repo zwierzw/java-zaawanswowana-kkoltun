@@ -2,7 +2,7 @@ package wzorce.com.add;
 //poniżej adnotacja sprawdzająca, czy interfejs jest funkcyjny
 
 @FunctionalInterface
-public interface Printer {
+public interface IPrinter {
 
     //interfejs funkcyjny ma jedną metodę abstrakcyjną
     //poniżej jest metoda abstrakcyjna
