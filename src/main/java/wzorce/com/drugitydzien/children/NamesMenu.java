@@ -6,6 +6,7 @@ public class NamesMenu extends WrongFormatException {
     public static void main(String[] args) {
 
         ChildrenRepository childrenRepository = new Names();
+        Scanner scanner = new Scanner(System.in);
 
         while (true) {
             System.out.println("1.dodaj dziecko do listy\n" +
@@ -17,7 +18,7 @@ public class NamesMenu extends WrongFormatException {
                     "7. EXIT");
             System.out.println("Napisz wybraną cyfrę");
 
-            Scanner scanner = new Scanner(System.in);
+
             int integer;
             try {
                  integer = Integer.valueOf(scanner.nextLine());
