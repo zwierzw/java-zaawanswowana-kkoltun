@@ -1,4 +1,4 @@
-package wzorce.com.drugitydzien.calculator;
+package wzorce.com.drugitydzien.palindrom;
 
 public interface Palindrome {
 
