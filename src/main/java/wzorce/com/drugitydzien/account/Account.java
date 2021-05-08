@@ -71,7 +71,7 @@ public class Account {
 
 
     public String toString() {
-        return "Account{name: " + name + ", balance:" + balance + "}";
+        return "wzorce.com.trzeciTydzien.account.Account{name: " + name + ", balance:" + balance + "}";
     }
 
 }
